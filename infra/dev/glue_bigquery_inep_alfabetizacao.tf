@@ -20,7 +20,7 @@ resource "aws_glue_job" "bq_inep_alfabetizacao" {
 
   name              = "bq-bronze-inep-alfabetizacao-${each.key}"
   description       = "Reads ${each.key} from BigQuery br_inep_avaliacao_alfabetizacao into S3 bronze layer"
-  role_arn          = "arn:aws:iam::161582022021:role/glue-role"
+  role_arn          = aws_iam_role.glue_role.arn
   glue_version      = "5.0"
   max_retries       = 0
   timeout           = 60
