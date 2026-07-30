@@ -1,7 +1,5 @@
 locals {
   inep_alfabetizacao_tables = toset([
-    "alunos",
-    "dicionario",
     "meta_alfabetizacao_brasil",
     "meta_alfabetizacao_municipio",
     "meta_alfabetizacao_uf",
