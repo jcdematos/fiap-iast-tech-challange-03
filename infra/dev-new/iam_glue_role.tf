@@ -1,5 +1,5 @@
 resource "aws_iam_role" "glue_role" {
-  name = "glue-role"
+  name = "glue-role${local.env_suffix}"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -21,7 +21,7 @@ resource "aws_iam_role" "glue_role" {
 }
 
 resource "aws_iam_policy" "glue_role_policy" {
-  name = "glue-rolePolicy"
+  name = "glue-rolePolicy${local.env_suffix}"
 
   policy = jsonencode({
     Version = "2012-10-17"
