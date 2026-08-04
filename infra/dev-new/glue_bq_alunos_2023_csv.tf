@@ -6,7 +6,7 @@ resource "aws_s3_object" "bq_alunos_2023_script" {
 }
 
 resource "aws_glue_job" "bq_alunos_2023" {
-  name              = "bq-bronze-inep-alfabetizacao-alunos-2023-csv"
+  name              = "bq-bronze-inep-alfabetizacao-alunos-2023-csv${local.env_suffix}"
   description       = "Reads alunos from BigQuery br_inep_avaliacao_alfabetizacao into S3 bronze layer"
   role_arn          = aws_iam_role.glue_role.arn
   glue_version      = "5.0"
