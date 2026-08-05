@@ -18,7 +18,7 @@ resource "aws_s3_object" "bq_inep_alfabetizacao_script" {
 resource "aws_glue_job" "bq_inep_alfabetizacao" {
   for_each = local.inep_alfabetizacao_tables
 
-  name              = "bq-bronze-inep-alfabetizacao-${each.key}"
+  name              = "bq-bronze-inep-alfabetizacao-${each.key}${local.env_suffix}"
   description       = "Reads ${each.key} from BigQuery br_inep_avaliacao_alfabetizacao into S3 bronze layer"
   role_arn          = aws_iam_role.glue_role.arn
   glue_version      = "5.0"

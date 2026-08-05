@@ -6,7 +6,7 @@ resource "aws_s3_object" "gold_alfabetizacao_municipio_script" {
 }
 
 resource "aws_glue_job" "gold_alfabetizacao_municipio" {
-  name              = "gold-alfabetizacao-municipio"
+  name              = "gold-alfabetizacao-municipio${local.env_suffix}"
   role_arn          = aws_iam_role.glue_role.arn
   glue_version      = "5.0"
   max_retries       = 0
@@ -33,11 +33,11 @@ resource "aws_glue_job" "gold_alfabetizacao_municipio" {
     "--CONF"                        = "spark.eventLog.rolling.enabled=true --conf spark.sql.catalog.glue_catalog.glue.skip-name-validation=true"
     "--TempDir"                     = "s3://${aws_s3_object.gold_alfabetizacao_municipio_script.bucket}/temporary/"
     "--spark-event-logs-path"       = "s3://${aws_s3_object.gold_alfabetizacao_municipio_script.bucket}/sparkHistoryLogs/"
-    "--BUCKET_PRINCIPAL"            = "fiap-datalake-tech"
+    "--BUCKET_PRINCIPAL"            = aws_s3_bucket.datalake.bucket
     "--PASTA_SILVER"                = "silver"
     "--PASTA_GOLD"                  = "gold"
     "--ALUNOS"                      = "alunos"
-    "--JOB_NAME"                    = "gold-alfabetizacao-municipio"
+    "--JOB_NAME"                    = "gold-alfabetizacao-municipio${local.env_suffix}"
   }
 
   execution_property {

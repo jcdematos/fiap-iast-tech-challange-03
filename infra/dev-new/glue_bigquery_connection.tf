@@ -1,5 +1,5 @@
 resource "aws_glue_connection" "bigquery" {
-  name            = "${var.project-name}-bigquery"
+  name            = "${var.project-name}${local.env_suffix}-bigquery"
   connection_type = "BIGQUERY"
 
   connection_properties = {
@@ -10,7 +10,7 @@ resource "aws_glue_connection" "bigquery" {
 }
 
 resource "aws_iam_role_policy" "glue_secretsmanager" {
-  name = "glue-secretsmanager-gcp"
+  name = "glue-secretsmanager-gcp${local.env_suffix}"
   role = aws_iam_role.glue_job_role.id
 
   policy = jsonencode({

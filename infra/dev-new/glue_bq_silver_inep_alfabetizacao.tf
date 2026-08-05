@@ -21,7 +21,7 @@ resource "aws_s3_object" "bq_silver_inep_alfabetizacao_script" {
 resource "aws_glue_job" "bq_silver_inep_alfabetizacao" {
   for_each = local.inep_alfabetizacao_silver_tables
 
-  name              = "bq-silver-inep-alfabetizacao-${each.key}"
+  name              = "bq-silver-inep-alfabetizacao-${each.key}${local.env_suffix}"
   description       = "Reads all tables from S3 bronze layer into S3 silver layer"
   role_arn          = aws_iam_role.glue_role.arn
   glue_version      = "5.0"
@@ -47,10 +47,10 @@ resource "aws_glue_job" "bq_silver_inep_alfabetizacao" {
     "--enable-metrics"        = ""
     "--enable-job-insights"   = "true"
     "--conf"                  = "spark.sql.catalog.glue_catalog.glue.skip-name-validation=true"
-    "--TempDir"               = "s3://aws-glue-assets-161582022021-us-east-1/temporary/"
-    "--spark-event-logs-path" = "s3://aws-glue-assets-161582022021-us-east-1/sparkHistoryLogs/"
+    "--TempDir"               = "s3://aws-glue-assets-${data.aws_caller_identity.current.account_id}-${data.aws_region.current.name}/temporary/"
+    "--spark-event-logs-path" = "s3://aws-glue-assets-${data.aws_caller_identity.current.account_id}-${data.aws_region.current.name}/sparkHistoryLogs/"
     "--ENTIDADE"              = each.key
-    "--JOB_NAME"              = "bq-silver-inep-alfabetizacao-${each.key}"
+    "--JOB_NAME"              = "bq-silver-inep-alfabetizacao-${each.key}${local.env_suffix}"
   }
 
   execution_property {
