@@ -2,8 +2,7 @@ resource "aws_s3_bucket" "datalake" {
   bucket = local.datalake_bukcet
 
   tags = {
-    Name        = local.datalake_bukcet
-    Environment = var.environment
+    Name = local.datalake_bukcet
   }
 
   force_destroy = true
@@ -20,8 +19,7 @@ resource "aws_s3_bucket" "glue_scripts" {
   bucket = local.glue_scripts_bucket
 
   tags = {
-    Name        = local.glue_scripts_bucket
-    Environment = var.environment
+    Name = local.glue_scripts_bucket
   }
 
   force_destroy = true
@@ -31,8 +29,7 @@ resource "aws_s3_bucket" "athena_queries" {
   bucket = local.athena_queries_bucket
 
   tags = {
-    Name        = local.athena_queries_bucket
-    Environment = var.environment
+    Name = local.athena_queries_bucket
   }
 
   force_destroy = true

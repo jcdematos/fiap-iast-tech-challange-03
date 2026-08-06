@@ -41,7 +41,6 @@ resource "aws_glue_job" "bq_alunos_2023" {
   }
 
   tags = {
-    "ManagedBy" = "Terraform"
-    "Dataset"   = "inep_avaliacao_alfabetizacao"
+    "Dataset" = "inep_avaliacao_alfabetizacao"
   }
 }

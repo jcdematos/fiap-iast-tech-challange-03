@@ -58,8 +58,6 @@ resource "aws_glue_job" "bq_silver_inep_alfabetizacao" {
   }
 
   tags = {
-    "Enviroment" = "dev"
-    "Layer"      = "silver"
-    "ManagedBy"  = "glue"
+    "Layer" = "silver"
   }
 }

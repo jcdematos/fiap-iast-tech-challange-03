@@ -43,4 +43,8 @@ resource "aws_glue_job" "gold_alfabetizacao_municipio" {
   execution_property {
     max_concurrent_runs = 1
   }
+
+  tags = {
+    "Layer" = "gold"
+  }
 }
