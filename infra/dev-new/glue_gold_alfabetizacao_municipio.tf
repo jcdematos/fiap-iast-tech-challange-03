@@ -1,5 +1,5 @@
 resource "aws_s3_object" "gold_alfabetizacao_municipio_script" {
-  bucket = "aws-glue-assets-${data.aws_caller_identity.current.account_id}-${data.aws_region.current.name}"
+  bucket = aws_s3_bucket.glue_scripts.id
   key    = "scripts/gold-alfabetizacao-municipio.py"
   source = "../../glue/gold/gold-alfabetizacao-municipio.py"
   etag   = filemd5("../../glue/gold/gold-alfabetizacao-municipio.py")
