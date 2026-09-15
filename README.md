@@ -51,12 +51,6 @@ As métricas utilizadas são as de classificação para modelos supervisionados:
 │
 ├── 📁 data
 ├── 📁 notebooks
-├── 📁 src
-│ ├── preprocessing
-│ ├── modeling
-│ ├── evaluation
-│ └── visualization
-│
 ├── 📁 reports
 ├── 📁 images
 ├── requirements.txt
