@@ -82,7 +82,6 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
     'pib_per_capita_R$',
     'densidade_demografica'
 
-
 OBS.: Desvio meta, meta ano e taxa de alfabetização real não foram utilizadas porque percebemos durante o processo que essas variáveis causavam data leakage, em que o modelo usava o futuro para treinar o passado.
 
 ## Insights encontrados
@@ -92,10 +91,17 @@ OBS.: Desvio meta, meta ano e taxa de alfabetização real não foram utilizadas
 
  Ou seja, o tempo é um fator relevante para determinar se o município atingirá ou não sua meta e sua localização também.
  
-• Quais municípios apresentam maior risco educacional?
-• Quais regiões possuem padrões semelhantes?
-• Como prever municípios que podem não atingir metas futuras?
-• Quais variáveis possuem maior influência nos modelos?
+* Quais municípios apresentam maior risco educacional?
+A maioria dos municípios que apresentam maior risco pertencem ao Top 5 Estados com médias mais baixas
+<img width="239" height="208" alt="image" src="https://github.com/user-attachments/assets/7f8ffb23-dafe-4a50-9b7f-b47044878218" />
+  
+* Quais regiões possuem padrões semelhantes?
+    Munícipios que estão no Estado do CE possuem taxas de alfabetização mais altas em média:
+  <img width="1446" height="525" alt="newplot" src="https://github.com/user-attachments/assets/b8f8b37d-9a0b-41dc-a8fb-f55adc1818c1" />
+    PR, GO e ES possuem médias bem parecidas.
+  
+* Como prever municípios que podem não atingir metas futuras?
+No resultado do modelo gerado, extrair municípios que tiverem a predição "ABAIXO DA META" como variável y.
 
 
 ## Limitações do projeto
