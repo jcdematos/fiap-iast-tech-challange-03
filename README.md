@@ -63,12 +63,14 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
   * Correlação linear positiva entre Total de Avaliados do Estado e Total Alfabetizados (quanto maior o número de avaliados maior o número total de alfabetizados)
   * Procuramos correlações entre taxa de alfabetização e dados de gênero, etnia e raça por municipio, assim como densidade demográfica, renda, pib, idhm porém não encontramos nada muito expressivo.
 
-* _Hipóteses analíticas_:
+* _Hipóteses analíticas pré execução da modelagem_:
   * Supomos que alimentar o modelo com dados de vínculo com estado e município pode ajudar no treinamento do modelo já que percebemos que existem estados que possuem desempenho acima da média (CE, por exemplo), e estados que nem têm meta definida (DF não tem meta definida em 2024 e 2025 - em 2023 não se apresenta).
   * Supomos que, devido a pouca disponibilidade de dados, o modelo terá dificuldade para generalizar e atingir bons números de previsão. Até porque os números de renda, pib, idhm são possuem coleta anuais, ou seja, estão desatualizados com relação as taxas de alfabetização e metas, o que dificulta a utilização pra projeções
 
 #### Modelagem supervisionada
-• Analisar variáveis relevantes;
+* _Análise de variáveis relevantes_: Utilizamos o SHAP para ajudar na explicabilidade do nosso modelo, e conforme hipótese levantada no EDA, os Estados tiveram grande influência na predição do atingimento da meta, mas as features de série temporal foram mais determinantes:
+* <img width="790" height="940" alt="image" src="https://github.com/user-attachments/assets/73f8670b-5a42-4f95-bdbb-278600173d13" />
+
 
 ## Insights encontrados
 • Quais fatores mais impactam a alfabetização?
