@@ -27,7 +27,7 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 
 
 ## Escolha do algoritmo
-Nossa variável resposta é categórica (status meta). Essa variável possui 3 categorias: "Sem Meta Definida", "Acima da Meta" e "Abaixo da Meta".
+Nossa variável resposta é categórica (status meta). Essa variável possui 3 categorias: "Sem Meta Definida", "Atingiu a Meta" e "Abaixo da Meta".
 
 Portanto, nosso algoritmo será de *classificação*, dentro de *aprendizado supervisionado*.
 
