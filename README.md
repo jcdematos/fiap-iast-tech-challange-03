@@ -31,9 +31,7 @@ Nossa variável resposta é categórica (status meta). Essa variável possui 3 c
 
 Portanto, nosso algoritmo será de *classificação*, dentro de *aprendizado supervisionado*.
 
-Usamos regressão logística porque pensamos na possibilidade de usar probabilidade (qual a probabilidade de que esse município atinja a meta em 2026, 2027, 2028, 2029 e 2030?), de forma que a explicabilidade fosse mais facilitada para a posterior utilização pelos gestores públicos.
-
-Como nosso dataset é pequeno, e com pouca dimensionalidade, optamos pro um modelo que utiliza poucos recursos computacionais.
+Usamos -regressão logística- porque pensamos na possibilidade de usar probabilidade (qual a probabilidade de que esse município atinja a meta em 2026, 2027, 2028, 2029 e 2030?), de forma que a explicabilidade fosse mais facilitada para a posterior utilização pelos gestores públicos. Como nosso dataset é pequeno, e com pouca dimensionalidade, optamos pro um modelo que utiliza poucos recursos computacionais.
 
 ## Métricas de avaliação
 
