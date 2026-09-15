@@ -16,7 +16,7 @@ A meta nacional é que, até 2030, todas as crianças brasileiras estejam alfabe
 Nosso objetivo analítico desse projeto é construir um modelo que faz a previsão do **ano seguinte** utilizando dados passados de meta e desempenho real de cada município.
 
 ## Descrição da base utilizada
-* Foi utilizada nossa base Gold, modelada e transformada a partir dos dados do INEP de 2023, 2023 e 2025: https://basedosdados.org/dataset/073a39d4-89cf-4068-b1e8-34ed0d9c0b72?table=e1de7a6a-5038-4e81-89f0-a15f2cc12c9b que possuem dados por município (meta anual, taxa real de alfabetização, se atingiu ou não sua meta).
+* Foi utilizada nossa base Gold, modelada e transformada a partir dos dados do INEP de 2023, 2024 e 2025: https://basedosdados.org/dataset/073a39d4-89cf-4068-b1e8-34ed0d9c0b72?table=e1de7a6a-5038-4e81-89f0-a15f2cc12c9b que possuem dados por município (meta anual, taxa real de alfabetização, se atingiu ou não sua meta).
 * Dados demográficos do IBGE (Censo 2022) (população por etnia, raça e sexo): https://basedosdados.org/dataset/08a1546e-251f-4546-9fe0-b1e6ab2b203d?table=707fd42e-95e0-4856-922f-fcbb55db913a e https://basedosdados.org/dataset/08a1546e-251f-4546-9fe0-b1e6ab2b203d?table=cf9537b5-6198-455f-a8b0-7c762e94d79c
 * Dados econômicos do IBGE de geração de renda por município (PIB 2023): https://basedosdados.org/dataset/fcf025ca-8b19-4131-8e2d-5ddb12492347?table=fbbbe77e-d234-4113-8af5-98724a956943
 * Dados socioeconômicos do IPEA 2010 com a renda média per capita por município: https://www.ipeadata.gov.br/Default.aspx (Renda per capita média de 2010 (seção social - tema renda - renda geral))
