@@ -20,7 +20,9 @@
 
 
 ## Estrutura do Repositório
-ALTERAR
+
+```sh
+.
 
 📁 fiap-iast-tech-challange-03
 │
@@ -37,7 +39,7 @@ ALTERAR
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 ## Interpretação dos resultados
 
