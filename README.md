@@ -27,11 +27,23 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 
 
 ## Escolha do algoritmo
+Nossa variável resposta é categórica (status meta). Essa variável possui 3 categorias: "Sem Meta Definida", "Acima da Meta" e "Abaixo da Meta".
 
+Portanto, nosso algoritmo será de *classificação*, dentro de *aprendizado supervisionado*.
+
+Usamos regressão logística porque pensamos na possibilidade de usar probabilidade (qual a probabilidade de que esse município atinja a meta em 2026, 2027, 2028, 2029 e 2030?), de forma que a explicabilidade fosse mais facilitada para a posterior utilização pelos gestores públicos.
+
+Como nosso dataset é pequeno, e com pouca dimensionalidade, optamos pro um modelo que utiliza poucos recursos computacionais.
 
 ## Métricas de avaliação
 
+As métricas utilizadas são as de classificação para modelos supervisionados:
+* Acurácia Geral: Percentual total de acertos do modelo considerando todas as classes (quantas previsões corretas ele fez sobre o total).
+* Precisão: Das vezes em que o modelo previu uma classe positiva, o quanto ele realmente acertou (evita falsos alvos).
+* Recall (Revocação): De todos os casos verdadeiramente positivos que existiam, o quanto o modelo conseguiu capturar (evita deixar passar casos reais).
+* F1-Score: Média harmônica entre Precisão e Recall; serve para avaliar o equilíbrio entre ambos, especialmente útil em cenários com dados desbalanceados.
 
+ Além disso, utilizamos Learning Curves para identificar se o modelo estava sofrendo de underfitting ou overfitting.
 
 ## Estrutura do Repositório
 
