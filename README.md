@@ -54,7 +54,7 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 ```
 
 ## Interpretação dos resultados
-### Análise Exploratória e Entendimento do Problema
+#### Análise Exploratória e Entendimento do Problema
 • Compreender o comportamento dos dados;
 • Identificar padrões;
 • Avaliar distribuições;
@@ -62,7 +62,7 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 • Analisar variáveis relevantes;
 • Formular hipóteses analíticas.
 
-### Modelagem supervisionada
+#### Modelagem supervisionada
 
 ## Insights encontrados
 • Quais fatores mais impactam a alfabetização?
