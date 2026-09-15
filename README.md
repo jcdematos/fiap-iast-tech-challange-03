@@ -68,12 +68,29 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
   * Supomos que, devido a pouca disponibilidade de dados, o modelo terá dificuldade para generalizar e atingir bons números de previsão. Até porque os números de renda, pib, idhm são possuem coleta anuais, ou seja, estão desatualizados com relação as taxas de alfabetização e metas, o que dificulta a utilização pra projeções
 
 #### Modelagem supervisionada
-* _Análise de variáveis relevantes_: Utilizamos o SHAP para ajudar na explicabilidade do nosso modelo, e conforme hipótese levantada no EDA, os Estados tiveram grande influência na predição do atingimento da meta, mas as features de série temporal foram mais determinantes:
- <img width="790" height="940" alt="image" src="https://github.com/user-attachments/assets/73f8670b-5a42-4f95-bdbb-278600173d13" />
+* _Análise de variáveis relevantes_: Foram utilizadas as seguintes features X para chegar na predição y = status_meta:
 
+ `    'lag_1', -- Features de série temporal
+    'diff_1', -- Features de série temporal
+    'rolling_mean_2',
+    'total_avaliados',
+    'media_alfa_uf',
+    'sigla_uf',
+    'idhm',
+    'renda_media_per_capita_R$',
+    'pib_per_capita_R$',
+    'densidade_demografica'
+`
+
+OBS.: Desvio meta, meta ano e taxa de alfabetização real não foram utilizadas porque percebemos durante o processo que essas variáveis causavam data leakage, em que o modelo usava o futuro para treinar o passado.
 
 ## Insights encontrados
-• Quais fatores mais impactam a alfabetização?
+* Quais fatores mais impactam a alfabetização?
+  * Utilizamos o SHAP para ajudar na explicabilidade do nosso modelo, e conforme hipótese levantada no EDA, os Estados tiveram grande influência na predição do atingimento da meta, mas as features de série temporal foram mais determinantes:
+ <img width="790" height="940" alt="image" src="https://github.com/user-attachments/assets/73f8670b-5a42-4f95-bdbb-278600173d13" />
+
+ Ou seja, o tempo é um fator relevante para determinar se o município atingirá ou não sua meta e sua localização também.
+ 
 • Quais municípios apresentam maior risco educacional?
 • Quais regiões possuem padrões semelhantes?
 • Como prever municípios que podem não atingir metas futuras?
