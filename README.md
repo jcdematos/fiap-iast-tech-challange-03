@@ -54,9 +54,22 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 ```
 
 ## Interpretação dos resultados
+### Análise Exploratória e Entendimento do Problema
+• Compreender o comportamento dos dados;
+• Identificar padrões;
+• Avaliar distribuições;
+• Detectar correlações;
+• Analisar variáveis relevantes;
+• Formular hipóteses analíticas.
 
+### Modelagem supervisionada
 
 ## Insights encontrados
+• Quais fatores mais impactam a alfabetização?
+• Quais municípios apresentam maior risco educacional?
+• Quais regiões possuem padrões semelhantes?
+• Como prever municípios que podem não atingir metas futuras?
+• Quais variáveis possuem maior influência nos modelos?
 
 
 ## Limitações do projeto
