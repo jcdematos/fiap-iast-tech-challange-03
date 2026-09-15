@@ -23,10 +23,11 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 * Dados de desenvolvimento humano e qualidade de vida IDHM 2010: https://basedosdados.org/dataset/cbfc7253-089b-44e2-8825-755e1419efc8?table=ec5fb3d1-fa98-4ab3-8a02-4b9950048a83
 
 ## Etapas de modelagem
+<img width="1024" height="436" alt="WhatsApp Image 2026-09-15 at 20 22 12" src="https://github.com/user-attachments/assets/502dd333-cecc-4d6d-b09b-29454b9497b6" />
 
-Fizemos a estratégia de backtesting no pipeline: Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2025.ipynb, para verificar a qualidade das estimativas
+Fizemos a estratégia de backtesting no pipeline: *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2025.ipynb*, para verificar a qualidade das estimativas
 
-A predição de 2026 encontra-se no Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2026.ipynb e será validada quando os dados estiverem disponíveis em 2027 (esse readme está sendo escrito em 15/09/2026).
+A predição de 2026 encontra-se no *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2026.ipynb* e será validada quando os dados estiverem disponíveis em 2027 (esse readme está sendo escrito em 15/09/2026). Atenção: O script só rodará a partir das métricas de avaliação com os dados de 2026 disponíveis para teste.
 
 ## Escolha do algoritmo
 Nossa variável resposta é categórica (status meta). Essa variável possui 3 categorias: "Sem Meta Definida", "Atingiu a Meta" e "Abaixo da Meta".
