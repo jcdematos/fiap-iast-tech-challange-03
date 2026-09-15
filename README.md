@@ -56,14 +56,15 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 
 ## Interpretação dos resultados
 #### Análise Exploratória e Entendimento do Problema
-• _Comportamento dos dados_: Pudemos observar a partir do EDA realizado que os dados trabalhados durante as explorações possuem pouquíssimas correlações lineares, e aquelas que foram encontradas apresentam índices baixos nas visões construídas utilizando matriz de correlação (matplotlib) e diagramas de dispersão (pairplot).   
+- _Comportamento dos dados_: Pudemos observar a partir do EDA realizado que os dados trabalhados durante as explorações possuem pouquíssimas correlações lineares, e aquelas que foram encontradas apresentam índices baixos nas visões construídas utilizando matriz de correlação (matplotlib) e diagramas de dispersão (pairplot).   
   
-• _Identificação de padrões, avaliação de distribuições e Detecção de correlações_: As correlações encontradas foram: 
-  *Correlação positiva média entre PIB e Renda média per capita por município
-  *Correlação linear positiva entre Total de Avaliados do Estado e Total Alfabetizados (quanto maior o número de avaliados maior o número total de alfabetizados)
-  *Procuramos correlações entre taxa de alfabetização e dados de gênero, etnia e raça por municipio, assim como densidade demográfica, renda, pib, idhm porém não encontramos nada muito expressivo.
+- _Identificação de padrões, avaliação de distribuições e Detecção de correlações_: As correlações encontradas foram: 
+  -Correlação positiva média entre PIB e Renda média per capita por município
+  -Correlação linear positiva entre Total de Avaliados do Estado e Total Alfabetizados (quanto maior o número de avaliados maior o número total de alfabetizados)
+  -Procuramos correlações entre taxa de alfabetização e dados de gênero, etnia e raça por municipio, assim como densidade demográfica, renda, pib, idhm porém não encontramos nada muito expressivo.
 
-• _Hipóteses analíticas_: Supomos que alimentar o modelo com dados de vínculo com estado e município pode ajudar no treinamento do modelo já que percebemos que existem estados que possuem desempenho acima da média (CE, por exemplo). Supomos que, devido a pouca disponibilidade de dados, o modelo terá dificuldade para generalizar e atingir bons números de previsão. 
+- _Hipóteses analíticas_: Supomos que alimentar o modelo com dados de vínculo com estado e município pode ajudar no treinamento do modelo já que percebemos que existem estados que possuem desempenho acima da média (CE, por exemplo), e estados que nem têm meta definida (DF não tem meta definida em 2024 e 2025 - em 2023 não se apresenta).
+- Supomos que, devido a pouca disponibilidade de dados, o modelo terá dificuldade para generalizar e atingir bons números de previsão. Até porque os números de renda, pib, idhm são possuem coleta anuais, ou seja, estão desatualizados com relação as taxas de alfabetização e metas, o que dificulta a utilização pra projeções
 
 #### Modelagem supervisionada
 • Analisar variáveis relevantes;
