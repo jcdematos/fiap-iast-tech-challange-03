@@ -70,7 +70,7 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 #### Modelagem supervisionada
 * _Análise de variáveis relevantes_: Foram utilizadas as seguintes features X para chegar na predição y = status_meta:
 
-  `
+  ```sh
      'lag_1', - Features de série temporal
     'diff_1', - Features de série temporal
     'rolling_mean_2',
