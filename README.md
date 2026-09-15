@@ -105,10 +105,13 @@ No resultado do modelo gerado, extrair municípios que tiverem a predição "ABA
 
 
 ## Limitações do projeto
-
+* Temos poucos anos disponíveis para treinar o modelo (apenas 2024 e 2025 porque 2023 não havia meta definida, ou seja, os dados era nulos e sem serventia para o modelo), supomos que com o passar dos anos até 2030, vamos ter mais precisão por possuirmos um histórico maior.
+* Há poucas correlações entre as features de alfabetização, dados sociodemográficos, socioeconômicos e de qualidade e vida.
+* Os dados de renda, PIB, densidade demográfica, IDHM não possuem a mesma frequência de atualização anual dos dados de alfabetização. O último CENSO foi em 2022, os dados de renda e IDHM são de 2010, por exemplo, isso dificulta as predições.
 
 ## Aplicação prática para políticas públicas
-
+A partir das projeções anuais do modelo, os gestores públicos podem fazer um trabalho antecipado junto com as secretárias dos Municipios e Estado, a fim de viabilizar recursos e meios para que as metas sejam atingidas.
 
 ## Possíveis evoluções futuras
+Existe muito espaço para evolução do modelo feito, como por exemplo a utilização da feature de taxa real de alfabetização como variável alvo em modelos de regressão baseados em árvores já que eles capturam relações não lineares, interações complexas entre variáveis e padrões empilhados sem precisar de proporcionalidade direta. Podemos também melhorar o feature engineering para acrescentar mais dados associados a dados sociodemográficos para melhorar a generalização do modelo.
 
