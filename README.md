@@ -113,5 +113,5 @@ No resultado do modelo gerado, extrair municípios que tiverem a predição "ABA
 A partir das projeções anuais do modelo, os gestores públicos podem fazer um trabalho antecipado junto com as secretárias dos Municipios e Estado, a fim de viabilizar recursos e meios para que as metas sejam atingidas.
 
 ## Possíveis evoluções futuras
-Existe muito espaço para evolução do modelo feito, como por exemplo a utilização da feature de taxa real de alfabetização como variável alvo em modelos de regressão baseados em árvores já que eles capturam relações não lineares, interações complexas entre variáveis e padrões empilhados sem precisar de proporcionalidade direta. Podemos também melhorar o feature engineering para acrescentar mais dados associados a dados sociodemográficos para melhorar a generalização do modelo.
+Existe muito espaço para evolução do modelo feito, como por exemplo a utilização da feature de taxa real de alfabetização como variável alvo em modelos de regressão baseados em árvores já que eles capturam relações não lineares, interações complexas entre variáveis e padrões empilhados sem precisar de proporcionalidade direta. Podemos também melhorar o feature engineering para acrescentar mais dados associados a dados sociodemográficos e do Censo Escolar, para melhorar a generalização do modelo.
 
