@@ -69,7 +69,7 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 
 #### Modelagem supervisionada
 * _Análise de variáveis relevantes_: Utilizamos o SHAP para ajudar na explicabilidade do nosso modelo, e conforme hipótese levantada no EDA, os Estados tiveram grande influência na predição do atingimento da meta, mas as features de série temporal foram mais determinantes:
-* <img width="790" height="940" alt="image" src="https://github.com/user-attachments/assets/73f8670b-5a42-4f95-bdbb-278600173d13" />
+ <img width="790" height="940" alt="image" src="https://github.com/user-attachments/assets/73f8670b-5a42-4f95-bdbb-278600173d13" />
 
 
 ## Insights encontrados
