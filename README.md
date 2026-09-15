@@ -22,7 +22,6 @@
 ## Estrutura do Repositório
 
 ```sh
-.
 
 📁 fiap-iast-tech-challange-03
 │
