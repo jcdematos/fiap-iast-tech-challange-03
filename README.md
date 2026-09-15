@@ -24,7 +24,9 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 
 ## Etapas de modelagem
 
+Fizemos a estratégia de backtesting no pipeline: Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2025.ipynb, para verificar a qualidade das estimativas
 
+A predição de 2026 encontra-se no Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2026.ipynb e será validada quando os dados estiverem disponíveis em 2027 (esse readme está sendo escrito em 15/09/2026).
 
 ## Escolha do algoritmo
 Nossa variável resposta é categórica (status meta). Essa variável possui 3 categorias: "Sem Meta Definida", "Atingiu a Meta" e "Abaixo da Meta".
