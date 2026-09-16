@@ -55,8 +55,6 @@ As métricas utilizadas são as de classificação para modelos supervisionados:
 ├── 📁 data
 ├── 📁 notebooks
 ├── 📁 reports
-├── 📁 images
-├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
