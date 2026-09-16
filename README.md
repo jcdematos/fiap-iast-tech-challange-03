@@ -25,9 +25,9 @@ Nosso objetivo analítico desse projeto é construir um modelo que faz a previs�
 ## Etapas de modelagem
 <img width="1024" height="436" alt="WhatsApp Image 2026-09-15 at 20 22 12" src="https://github.com/user-attachments/assets/502dd333-cecc-4d6d-b09b-29454b9497b6" />
 
-Notebook 1: Fizemos a estratégia de backtesting no pipeline: *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2025.ipynb*, para verificar a qualidade das estimativas
+Notebook 1: Fizemos a estratégia de backtesting no pipeline: *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2025.ipynb*, para verificar a qualidade das estimativas - *Recomendamos começar por aqui!*
 
-Notebook 2: A predição de 2026 encontra-se no *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2026.ipynb* e será validada quando os dados estiverem disponíveis em 2027 (esse readme está sendo escrito em 15/09/2026). Atenção: O script só rodará a partir das métricas de avaliação com os dados de 2026 disponíveis para teste.
+Notebook 2: A predição de 2026 encontra-se no *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2026.ipynb* e será validada quando os dados estiverem disponíveis em 2027 (esse readme está sendo escrito em 15/09/2026). *Atenção: O script só rodará a partir das métricas de avaliação com os dados de 2026 disponíveis para teste.*
 
 Notebook 3: Como as métricas de acurácia e f1 não está da maneira que gostaríamos por conta da base ser pequena (treino 2024 e teste 2025), apenas 69% de acurácia e números ainda menores em F1 Macro. Nosso modelo está acertando muito melhor “Atingiu a Meta” do que “Abaixo da Meta”. Para tentar outras possibildiade, fizemos um notebook com o treinamento de outros modelos para comparar a precisão, e os resultados não foram tão satisfatórios assim:
 ```sh
