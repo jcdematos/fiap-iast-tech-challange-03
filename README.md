@@ -93,8 +93,8 @@ OBS.: Desvio meta, meta ano e taxa de alfabetização real não foram utilizadas
 
 ## Insights encontrados
 * Quais fatores mais impactam a alfabetização?
-  * Utilizamos o SHAP para ajudar na explicabilidade do nosso modelo, e conforme hipótese levantada no EDA, os Estados tiveram grande influência na predição do atingimento da meta, mas as features de série temporal foram mais determinantes:
- <img width="790" height="940" alt="image" src="https://github.com/user-attachments/assets/73f8670b-5a42-4f95-bdbb-278600173d13" />
+  * Utilizamos o SHAP para ajudar na explicabilidade do nosso modelo, e conforme hipótese levantada no EDA, os Estados tiveram grande influência na predição do atingimento da meta.
+ <img width="790" height="540" alt="image" src="https://github.com/user-attachments/assets/5e9021b8-2950-4179-8831-892d78547346" />
 
  Ou seja, o tempo é um fator relevante para determinar se o município atingirá ou não sua meta e sua localização também.
  
