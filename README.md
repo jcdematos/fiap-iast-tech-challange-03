@@ -30,12 +30,13 @@ Notebook 1: Fizemos a estratégia de backtesting no pipeline: *Modelo_Classifica
 Notebook 2: A predição de 2026 encontra-se no *Modelo_Classificação_Regressao_Logistica_Fase3_Previsão 2026.ipynb* e será validada quando os dados estiverem disponíveis em 2027 (esse readme está sendo escrito em 15/09/2026). Atenção: O script só rodará a partir das métricas de avaliação com os dados de 2026 disponíveis para teste.
 
 Notebook 3: Como as métricas de acurácia e f1 não está da maneira que gostaríamos por conta da base ser pequena (treino 2024 e teste 2025), onde o modelo está acertando muito melhor “Atingiu a Meta” do que “Abaixo da Meta”, fizemos um notebook com o treinamento de outros modelos para comparar a precisão, e os resultados não foram tão satisfatórios assim:
-
+```sh
  Modelo  Accuracy  Precision Macro  Recall Macro  F1 Macro
   Gradient Boosting  0.705574         0.601546      0.578230  0.582570
            Ensemble  0.710251         0.603612      0.573809  0.577453
       Random Forest  0.710812         0.603693      0.572887  0.576323
 Regressão Logística  0.683128         0.581280      0.571781  0.574624
+```
 
 Optamos por manter Regressão Logística porque as diferenças foram muito pequenas, acreditamos que a deficiência está mesmo na quantidade de informações que temos disponíveis para treino e teste.
 
